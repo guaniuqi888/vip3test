@@ -69,20 +69,20 @@ print(s)
 s1=[66,67,68]
 s.extend(s1)
 print(s)
-
 '''
-
 s={1,3,2}
 s.add(4)
 print(s)
 #s.remove(3)
 #s.clear()
+'''
+'''
 
-a=int(input(''))
-if a>=90 and a<=100:
-   print(a='A')
-else:a<60
-   print (a='E')
+
+'''
+
+
+
 
 
 
