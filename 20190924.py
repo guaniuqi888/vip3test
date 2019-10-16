@@ -77,6 +77,215 @@ print(num)
 '''
 
 
+'''
+class student:
+    def study(self,study):
+        print('学习')
+
+    def course(self,course):
+        print('课程')
+
+a=student()
+'''
+
+'''
+n=1
+sum=0
+while n<101:
+    sum+=n
+    n+=1
+print(sum)
+'''
+
+'''
+def add_end(L=[]):
+    L.append('END')
+    return L
+print(add_end())
+print((add_end()))
+'''
+
+'''
+def calc(*numbers):
+    a=1
+    for n in numbers:
+        a=a*n
+    return a
+b=[1,2,3]
+print(calc(*b))
+'''
+'''
+def add(a,b):
+    a=int(input('输入第一个数：'))
+    b=input('输入运算符号：')
+    c=int(input('输入第一个数：'))
+    if b=='+':
+        d=a+c
+        print(a,b,c,'=',d)
+    elif b=='-':
+        d = a -c
+        print(a, b, c, '=', d)
+    elif b == '*':
+        d = a *c
+        print(a, b, c, '=', d)
+    elif b == '/':
+        d = a / c
+        print(a, b, c, '=', d)
+
+add(3,4)
+'''
+'''
+def person(name,age,**kwarges):
+    print('name',name,'age',age,kwarges)
+
+extra={'city':'beijing','job':'math'}
+person('xiaoming',25,**extra)
+'''
+'''
+def calc(a,b):
+    try:
+        print(a/b)
+    except ZeroDivisionError:
+        print('除数不能为0')
+
+a=int(input(''))
+b=int(input(''))
+calc(a,b)
+'''
+'''
+def calc(a,b):
+    try:
+        print(a/b)
+    except BaseException:
+        print('除数不能为0')
+
+a=int(input(''))
+b=int(input(''))
+calc(a,b)
+'''
+'''
+def calc(a,b):
+    try:
+        print(a/b)
+    except Exception:
+        print('除数不能为0')
+
+a=int(input(''))
+b=int(input(''))
+calc(a,b)
+'''
+
+'''
+def add(a,b):
+    a=int(input('输入第一个数：'))
+    b=input('输入运算符号：')
+    c=int(input('输入第一个数：'))
+    if b=='+':
+        d=a+c
+        print(a,b,c,'=',d)
+    elif b=='-':
+        d = a -c
+        print(a, b, c, '=', d)
+    elif b == '*':
+        d = a *c
+        print(a, b, c, '=', d)
+    elif b == '/':
+        try:
+            d = a / c
+            print(a, b, c, '=', d)
+        except BaseException:
+            print('除数不能为0')
+        finally:
+            print('程序执行完毕')
+
+add(3,4)
+'''
+'''
+def calc(a,b):
+    try:
+        print(a/b-c)
+    except NameError:
+        print('该对象未声明')
+
+a=int(input(''))
+b=int(input(''))
+calc(a,b)
+'''
+'''
+L=[]
+f = open('F:\\2wan\\data.txt','r+')
+#print(f.readlines())
+a=f.readlines()
+
+for i in a:
+    i=i.strip()
+    L.append(int(i))
+
+
+c=sorted(L)
+#print(c)
+d=[]
+w=open('F:\\2wan\\backup.txt','w+')
+
+for m in c:
+    m=str(m)
+    d.append(m)
+for n in d:
+    w.write(n)
+    w.write('\n')
+
+w.seek(0)
+print(w.read())
+'''
+
+
+'''
+a=[1,2,3,4,5]
+s1=[str(i)for i in a]
+b='+'
+
+print(b.join(s1))
+'''
+
+'''
+a='hello world'
+print(a.split('l'))
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
